@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "vishnu-first-bucket-19oct"
+	bucket = "Neeha-first-bucket-8thFeb"
 }
 
 resource "aws_s3_bucket_acl" "example_bucket_acl" {
@@ -14,10 +14,10 @@ provider "aws" {
 }
 
 variable "accesskey"{
-    default="AKIAZTIMJ7JHIX5X6XYT"
+    default="AKIAZTIMJ7JHGL2PE77T"
 
 }
 
 variable "secretkey"{
-    default="sZxGTgqjwRdnyDHlckv4QzTaY2OVxz1oObnB6ZUM"
+    default="DIzV1T3rlYh+IDOAh8IG4QzSCTeSl78pxDcW4jhn"
 }
