@@ -10,10 +10,10 @@ provider "aws" {
 }
 
 variable "accesskey"{
-    default="AKIAZTIMJ7JHMO7XGZX7"
+    default="AKIAZTIMJ7JHHT4NE6VW"
 
 }
 
 variable "secretkey"{
-    default="7gcikr1DS7qv7U7qfGWOLroOiAbzcGlIonGepf6S"
+    default="qf+Jwn694G8+6nq3t/LHYjxuIbUUZrSOXImB0ZnF"
 }
