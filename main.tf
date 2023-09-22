@@ -1,4 +1,4 @@
-rsource "aws_s3_bucket" "bucket1" {
+resource "aws_s3_bucket" "bucket1" {
 	bucket = "neeha-first-bucket"
 }
 
