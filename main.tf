@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "<yourname>-first-bucket"
+	bucket = "neeha-first-bucket"
 }
 
 
