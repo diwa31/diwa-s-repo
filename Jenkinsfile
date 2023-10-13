@@ -1,3 +1,4 @@
+@Library('github.com/releaseworks/jenkinslib') _
 node{
     stage 'Checkout Terraform Project'
         git branch: 'main', url: 'https://gitlab.com/n.neeharikareddy/terraformrepo.git'
@@ -11,6 +12,9 @@ node{
         bat 'terraform fmt'
     stage 'APPLY'
         bat 'terraform apply "s3.tfplan"'
-    stage 'DISPLAY'
-        bat 'aws s3 ls'    
+    stage("List S3 buckets") {
+        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'AWS key', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+        AWS("--region=eu-west-1 s3 ls")
+    }
+  }    
 }
