@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "neeha-first-bucket"
+	bucket = "<yourname>-first-bucket"
 }
 
 
@@ -10,10 +10,10 @@ provider "aws" {
 }
 
 variable "accesskey"{
-    default="AKIAZTIMJ7JHHT4NE6VW"
+    default="AKIAZTIMJ7JHDTEXKPB3"
 
 }
 
 variable "secretkey"{
-    default="qf+Jwn694G8+6nq3t/LHYjxuIbUUZrSOXImB0ZnF"
+    default="MQrsMUvEVEL98/gOzMrFfgpxKb+bCw7ttTWGMgee"
 }
