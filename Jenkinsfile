@@ -13,8 +13,8 @@ node{
     stage 'APPLY'
         bat 'terraform apply "s3.tfplan"'
     stage("List S3 buckets") {
-        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'AWS key', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY']]) {
-        AWS("--region=eu-west-1 s3 ls")
+        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-key', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+        bat 'aws s3 ls'
     }
   }    
 }
