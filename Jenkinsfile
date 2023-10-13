@@ -1,6 +1,6 @@
 node{
     stage 'Checkout Terraform Project'
-        git branch: 'master', url: 'https://gitlab.com/n.neeharikareddy/terraformrepo.git'
+        git branch: 'main', url: 'https://gitlab.com/n.neeharikareddy/terraformrepo.git'
     stage 'INIT'
         bat 'terraform init'
     stage 'SANITY CHECK'
