@@ -16,6 +16,6 @@ node{
         stage("List S3 buckets") 
             bat 'terraform state list'
         stage("Display State File")
-            bat 'teraform show'
+            bat 'terraform show'
   }    
 }
