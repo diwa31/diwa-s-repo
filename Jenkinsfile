@@ -15,7 +15,5 @@ node{
             bat 'terraform apply "s3.tfplan"'
         stage("List S3 buckets") 
             bat 'terraform state list'
-        stage("Display State File")
-            bat 'terraform show'
   }    
 }
